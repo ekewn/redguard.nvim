@@ -1,8 +1,8 @@
--- Colorscheme name:    nord.nvim
--- Description:         Port of articicestudio's nord theme for neovim
+-- Colorscheme name:    redguard.nvim
+-- Description:         Port of articicestudio's redguard theme for neovim
 -- Author:              https://github.com/shaunsingh
 
-local util = require("nord.util")
+local util = require("redguard.util")
 
 local bufferline = require("bufferline.theme")
 

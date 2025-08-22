@@ -1,11 +1,11 @@
-local colors = require("nord.colors")
+local colors = require("redguard.colors")
 
 local setting = {
-	fill = colors.nord0_gui,
-	indicator = colors.nord9_gui,
-	bg = colors.nord0_gui,
-	buffer_bg = colors.nord0_gui,
-	buffer_bg_selected = colors.nord1_gui,
+	fill = colors.redguard0_gui,
+	indicator = colors.redguard9_gui,
+	bg = colors.redguard0_gui,
+	buffer_bg = colors.redguard0_gui,
+	buffer_bg_selected = colors.redguard1_gui,
 	buffer_bg_visible = "#2A2F3A",
 	bold = true,
 	italic = true,

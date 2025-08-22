@@ -1,13 +1,13 @@
 
-# shaunsingh/nord.nvim
+# ekewn/redguard.nvim
 
-## Neovim theme based off of the [Nord Color Palette.](https://www.nordtheme.com/docs/colors-and-palettes)
+## Neovim theme based off of the [redguard Color Palette.](https://www.nordtheme.com/docs/colors-and-palettes)
 
 ![118406380-d78ad580-b649-11eb-945c-5988fa717f39](https://user-images.githubusercontent.com/71196912/128029391-ad55fd41-d5f9-43bd-a795-c11b562f9d6d.jpg)
 
 ## Features
 
-Nord.nvim is meant to be a modern colorscheme written in lua for NeoVim that supports a lot of the new features
+redguard.nvim is meant to be a modern colorscheme written in lua for NeoVim that supports a lot of the new features
 added to NeoVim like built-in LSP and [TreeSitter](https://github.com/nvim-treesitter/nvim-treesitter)
 
 + Supported plugins:
@@ -49,12 +49,12 @@ Install via your favourite package manager:
 
 ```vim
 " If you are using Vim-Plug
-Plug 'shaunsingh/nord.nvim'
+Plug 'ekewn/reguard.nvim'
 ```
 
 ```lua
 -- If you are using Packer
-use 'shaunsingh/nord.nvim'
+use 'ekewn/redguard.nvim'
 ```
 
 ## 🌓 Usage
@@ -63,21 +63,21 @@ Enable the colorscheme:
 
 ```vim
 "Vim-Script:
-colorscheme nord
+colorscheme redguard
 ```
 
 ```lua
 --Lua:
-vim.cmd[[colorscheme nord]]
+vim.cmd[[colorscheme redguard]]
 ```
 
-To enable the `nord` theme for `Lualine`, simply specify it in your lualine settings:
+To enable the `redguard` theme for `Lualine`, simply specify it in your lualine settings:
 
 ```lua
 require('lualine').setup {
   options = {
     -- ... your lualine config
-    theme = 'nord'
+    theme = 'redguard'
     -- ... your lualine config
   }
 }
@@ -87,39 +87,39 @@ require('lualine').setup {
 
 | Option                              | Default     | Description                                                                                                                                                     |
 | ----------------------------------- | ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| nord_contrast                   | `false`      | Make sidebars and popup menus like nvim-tree and telescope have a different background                                                                                       |
-| nord_borders                    | `false`     | Enable the border between verticaly split windows visable
-| nord_disable_background         | `false`     | Disable the setting of background color so that NeoVim can use your terminal background
-| nord_cursorline_transparent     | `false`     | Set the cursorline transparent/visible
-| nord_enable_sidebar_background  | `false`     | Re-enables the background of the sidebar if you disabled the background of everything
-| nord_italic                     | `true`      | enables/disables italics
-| nord_uniform_diff_background    | `false`     | enables/disables colorful backgrounds when used in *diff* mode
-| nord_bold                       | `true`      | enables/disables bold
+| redguard_contrast                   | `false`      | Make sidebars and popup menus like nvim-tree and telescope have a different background                                                                                       |
+| redguard_borders                    | `false`     | Enable the border between verticaly split windows visable
+| redguard_disable_background         | `false`     | Disable the setting of background color so that NeoVim can use your terminal background
+| redguard_cursorline_transparent     | `false`     | Set the cursorline transparent/visible
+| redguard_enable_sidebar_background  | `false`     | Re-enables the background of the sidebar if you disabled the background of everything
+| redguard_italic                     | `true`      | enables/disables italics
+| redguard_uniform_diff_background    | `false`     | enables/disables colorful backgrounds when used in *diff* mode
+| redguard_bold                       | `true`      | enables/disables bold
 
 ```lua
 -- Example config in lua
-vim.g.nord_contrast = true
-vim.g.nord_borders = false
-vim.g.nord_disable_background = false
-vim.g.nord_italic = false
-vim.g.nord_uniform_diff_background = true
-vim.g.nord_bold = false
+vim.g.redguard_contrast = true
+vim.g.redguard_borders = false
+vim.g.redguard_disable_background = false
+vim.g.redguard_italic = false
+vim.g.redguard_uniform_diff_background = true
+vim.g.redguard_bold = false
 
 -- Load the colorscheme
-require('nord').set()
+require('redguard').set()
 ```
 
 ```vim
 " Example config in Vim-Script
-let g:nord_contrast = v:true
-let g:nord_borders = v:false
-let g:nord_disable_background = v:false
-let g:nord_italic = v:false
-let g:nord_uniform_diff_background = v:true
-let g:nord_bold = v:false
+let g:redguard_contrast = v:true
+let g:redguard_borders = v:false
+let g:redguard_disable_background = v:false
+let g:redguard_italic = v:false
+let g:redguard_uniform_diff_background = v:true
+let g:redguard_bold = v:false
 
 " Load the colorscheme
-colorscheme nord
+colorscheme redguard
 ```
 
 ### headlines support
@@ -154,7 +154,7 @@ It should look like this
 To support [BufferLine](https://github.com/akinsho/nvim-bufferline.lua), you can add these code to your settings:
 
 ```lua
-local highlights = require("nord").bufferline.highlights({
+local highlights = require("redguard").bufferline.highlights({
     italic = true,
     bold = true,
 })
@@ -174,7 +174,7 @@ It should look like this
 or you want to use slant separator
 
 ```lua
-local highlights = require("nord").bufferline.highlights({
+local highlights = require("redguard").bufferline.highlights({
     italic = true,
     bold = true,
     fill = "#181c24"
@@ -196,11 +196,11 @@ The default setting of bufferline highlights is
 
 ```lua
 {
-    fill = colors.nord0_gui,
-    indicator = colors.nord9_gui,
-    bg = colors.nord0_gui,
-    buffer_bg = colors.nord0_gui,
-    buffer_bg_selected = colors.nord1_gui,
+    fill = colors.redguard0_gui,
+    indicator = colors.redguard9_gui,
+    bg = colors.redguard0_gui,
+    buffer_bg = colors.redguard0_gui,
+    buffer_bg_selected = colors.redguard1_gui,
     buffer_bg_visible = "#2A2F3A",
     bold = true,
     italic = true,
