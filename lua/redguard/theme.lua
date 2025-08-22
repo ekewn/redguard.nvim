@@ -346,10 +346,10 @@ theme.loadTreeSitter = function()
 	treesitter.TSKeywordOperator = { fg = redguard.redguard8_gui, style = italic }
 	treesitter.TSRepeat = { fg = redguard.redguard9_gui, style = italic } -- For keywords related to loops.
 	-- Strings
-	treesitter.TSString = { fg = redguard.redguard14_gui, style = italic } -- For strings.
+	treesitter.TSString = { fg = redguard.redguard15_gui, style = italic } -- For strings.
 	treesitter.TSStringRegex = { fg = redguard.redguard7_gui, style = italic } -- For regexes.
 	treesitter.TSStringEscape = { fg = redguard.redguard15_gui, style = italic } -- For escape characters within a string.
-	treesitter.TSCharacter = { fg = redguard.redguard14_gui, style = italic } -- For characters.
+	treesitter.TSCharacter = { fg = redguard.redguard15_gui, style = italic } -- For characters.
 
 	treesitter["@comment"] = { fg = redguard.redguard3_gui_bright, style = italic }
 	treesitter["@conditional"] = { fg = redguard.redguard9_gui, style = italic }
@@ -364,10 +364,10 @@ theme.loadTreeSitter = function()
 	treesitter["@keyword.return"] = { fg = redguard.redguard8_gui, style = italic }
 	treesitter["@keyword.operator"] = { fg = redguard.redguard8_gui, style = italic }
 	treesitter["@repeat"] = { fg = redguard.redguard9_gui, style = italic }
-	treesitter["@string"] = { fg = redguard.redguard14_gui, style = italic }
+	treesitter["@string"] = { fg = redguard.redguard15_gui, style = italic }
 	treesitter["@string.regex"] = { fg = redguard.redguard7_gui, style = italic }
 	treesitter["@string.escape"] = { fg = redguard.redguard15_gui, style = italic }
-	treesitter["@character"] = { fg = redguard.redguard14_gui, style = italic }
+	treesitter["@character"] = { fg = redguard.redguard15_gui, style = italic }
 
 	return treesitter
 end
