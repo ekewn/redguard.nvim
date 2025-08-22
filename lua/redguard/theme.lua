@@ -66,7 +66,7 @@ theme.loadSyntax = function()
 		Identifier = { fg = redguard.crimson, style = italic },
 		Keyword = { fg = redguard.crimson, style = italic },
 		Repeat = { fg = redguard.crimson, style = italic },
-		String = { fg = redguard.green, style = italic },
+		String = { fg = redguard.purple, style = italic },
 	}
 end
 
