@@ -110,7 +110,7 @@ theme.loadEditor = function()
 		StatusLineNC = { fg = redguard.redguard4_gui, bg = redguard.redguard1_gui },
 		StatusLineTerm = { fg = redguard.redguard4_gui, bg = redguard.redguard2_gui },
 		StatusLineTermNC = { fg = redguard.redguard4_gui, bg = redguard.redguard1_gui },
-		TabLineFill = { fg = redguard.redguard4_gui, bg = redguard.none },
+		TabLineFill = { fg = redguard.redguard4_gui, bg = redguard.redguard3_gui },
 		TablineSel = { fg = redguard.redguard1_gui, bg = redguard.redguard9_gui },
 		Tabline = { fg = redguard.redguard4_gui, bg = redguard.redguard1_gui },
 		Title = { fg = redguard.redguard14_gui, bg = redguard.none, style = bold },
