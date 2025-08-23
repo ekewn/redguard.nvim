@@ -8,6 +8,11 @@
 redguard.nvim is meant to be a modern colorscheme written in lua for NeoVim that supports a lot of the new features
 added to NeoVim like built-in LSP and [TreeSitter](https://github.com/nvim-treesitter/nvim-treesitter)
 
+It's Nord... but red instead of blue...
+Let's be very clear, this is a fork of the wonderful Nord colorscheme prepared by [shaunsingh](https://github.com/shaunsingh/nord.nvim).
+All credit where it is due. THANK YOU.
+I basically just used sed and made this a red theme instead of blues. It's warmer and makes you feel like everything is an error.
+
 + Supported plugins:
   + [TreeSitter](https://github.com/nvim-treesitter/nvim-treesitter)
   + [LSP Diagnostics](https://neovim.io/doc/user/lsp.html)
@@ -143,10 +148,6 @@ require("headlines").setup({
 
 ```
 
-It should look like this
-
-![26B3E551-FD57-458C-BE85-C8945BCE37DF](https://user-images.githubusercontent.com/61075605/197376829-43c30172-2528-47a0-b23f-ab63f73c0851.png)
-
 ### bufferline support
 
 To support [BufferLine](https://github.com/akinsho/nvim-bufferline.lua), you can add these code to your settings:
@@ -166,10 +167,7 @@ require("bufferline").setup({
 
 ```
 
-It should look like this
-
-<img width="891" alt="image" src="https://user-images.githubusercontent.com/61075605/189152634-6d309903-90e6-4ffe-a7bc-f65b19eb4c43.png">
-or you want to use slant separator
+If you want to use slant separator:
 
 ```lua
 local highlights = require("redguard").bufferline.highlights({
@@ -187,8 +185,6 @@ require("bufferline").setup({
 
 ```
 
-
-<img width="866" alt="image" src="https://user-images.githubusercontent.com/61075605/189151983-0cbf1f13-e62b-4b01-b6ce-a1c00a5f8ef3.png">
 
 The default setting of bufferline highlights is
 
